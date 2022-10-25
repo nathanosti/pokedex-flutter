@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/features/pages/home/home_error_page.dart';
+import 'package:my_first_app/features/pages/home/home_loading_page.dart';
 import 'package:my_first_app/features/pages/home/home_page.dart';
 
 void main() {
@@ -15,6 +17,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.red,
         ),
-        home: const HomePage());
+        home: const HomePage(
+          pokemonList: [],
+        ));
   }
 }
